@@ -1,0 +1,26 @@
+{% extends 'layout.html' %} {% block content %}
+<section>
+    <h1>Announcements</h1>
+    {% if logged_in %}
+    <!--List each element that is in the database of the company.-->
+        <section>
+            <img src="" alt="test image">
+            <p>test.</p>
+        </section>
+    {% else %}
+        <p><em>Please log in to view this section.</em></p>
+    {% endif %}
+</section>
+<section>
+    <h1>Menu Highlights</h1>
+    {% if logged_in %}
+    <!--List each element that is in the database of the company.-->
+        <section>
+            <img src="" alt="test image">
+            <p>test.</p>
+        </section>
+    {% else %}
+        <p><em>Please log in to view this section.</em></p>
+    {% endif %}
+</section>
+{% endblock %}
